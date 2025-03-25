@@ -1,8 +1,11 @@
 package acc.project.email_service.application;
 
+import org.springframework.stereotype.Service;
+
 import acc.project.email_service.adapters.EmailSenderGateway;
 import acc.project.email_service.domain.EmailSenderUseCase;
 
+@Service
 public class EmailSenderService implements EmailSenderUseCase {
 
   private final EmailSenderGateway emailSenderGateway;
